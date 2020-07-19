@@ -1,4 +1,33 @@
 # Write classes for the following class hierarchy:
+
+# __base_class__
+class Vehicle:
+  def __init__(self):
+    pass
+
+class GroundVehicle(Vehicle):
+  def __init__(self):
+    super().__init__()
+
+class Car(GroundVehicle):
+  def __init__(self):
+    super().__init__()
+
+class Motorcycle(GroundVehicle):
+  def __init__(self):
+    super().__init__()
+
+class FlightVehicle(Vehicle):
+  def __init__(self):
+    super().__init__()
+
+class Starship(FlightVehicle):
+  def __init__(self):
+    super().__init__()
+
+class Airplane(FlightVehicle):
+  def __init__(self):
+    super().__init__()
 #
 #  [Vehicle]->[FlightVehicle]->[Starship]
 #      |                |
